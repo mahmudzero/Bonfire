@@ -22,8 +22,12 @@ Bookmarks::Application.configure do
   # Raise an error on page load if there are pending migrations
   config.active_record.migration_error = :page_load
 
+  # Default url, change host to actual host in production.
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
   # Debug mode disables concatenation and preprocessing of assets.
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
 end
+

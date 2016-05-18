@@ -20,7 +20,7 @@ class BookmarksController < ApplicationController
   # GET /bookmarks/1/edit
   def edit
   end
-
+  
   # POST /bookmarks
   # POST /bookmarks.json
   def create
